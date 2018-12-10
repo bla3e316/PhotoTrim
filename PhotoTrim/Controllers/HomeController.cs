@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PhotoTrim.Models;
+using Microsoft.AspNetCore.Http;
+using System.Drawing;
+using System.IO;
 
 namespace PhotoTrim.Controllers
 {
@@ -38,6 +41,17 @@ namespace PhotoTrim.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpPost]
+        public FileStreamResult Index(IList<IFormFile> files)
+        {
+            using (Image img = Image.FromStream(files[0].OpenReadStream()))
+            {
+                Stream ms = new MemoryStream(img.Resize(200, 200).ToByteArray());
+
+                return new FileStreamResult(ms, "image/jpg");
+            }
         }
     }
 }
