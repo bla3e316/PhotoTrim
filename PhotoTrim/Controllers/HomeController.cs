@@ -25,17 +25,17 @@ namespace PhotoTrim.Controllers
             return View();
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
+        //public IActionResult Contact()
+        //{
+        //    ViewData["Message"] = "Your contact page.";
 
-            return View();
-        }
+        //    return View();
+        //}
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+        //public IActionResult Privacy()
+        //{
+        //    return View();
+        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -48,7 +48,7 @@ namespace PhotoTrim.Controllers
         {
             using (Image img = Image.FromStream(files[0].OpenReadStream()))
             {
-                Stream ms = new MemoryStream(img.Resize(200, 200).ToByteArray());
+                Stream ms = new MemoryStream(img.Resize(300, 300).ToByteArray());
 
                 return new FileStreamResult(ms, "image/jpg");
             }
