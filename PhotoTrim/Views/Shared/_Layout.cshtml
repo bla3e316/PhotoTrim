@@ -41,11 +41,18 @@
     <partial name="_CookieConsentPartial" />
 
     <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - PhotoTrim</p>
-        </footer>
+        <div >
+            @RenderBody()
+            <hr />
+        </div>
+
+        
+        <div class="footer">
+            <footer>
+                &copy; 2018 - PhotoTrim service
+            </footer>
+        </div>
+      
     </div>
 
     <environment include="Development">
