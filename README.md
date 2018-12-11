@@ -1,3 +1,3 @@
 # PhotoTrim
-Azure test photo trim WebApp
-https://phototrim-dev-as.azurewebsites.net/
+### Azure test photo trim WebApp
+Link to the deployed [project](https://phototrim-dev-as.azurewebsites.net/)
