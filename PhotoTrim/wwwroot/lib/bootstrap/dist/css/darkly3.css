@@ -21,6 +21,7 @@ html {
 body {
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .body-content {
@@ -35,20 +36,22 @@ body {
 
 .inputstyle {
     width: 300px;
-    border-top: 2px solid rgba(242, 252, 8, 0.83)
+    border-top: 2px solid rgba(242, 252, 8, 0.83);
+    text-align: center;
 }
 
 .buttonstyle {
     margin-top: 3px;
     width: 300px;
-    border-top: 2px solid rgba(242, 252, 8, 0.83)
+    border-top: 2px solid rgba(242, 252, 8, 0.83);
+    text-align: center;
 }
 
-    .buttonstyle:hover {
-        border-top: 2px solid rgba(242, 252, 8, 0.83);
-        background: #3498db;
-        color: #fff;
-    }
+.buttonstyle:hover {
+    border-top: 2px solid rgba(242, 252, 8, 0.83);
+    background: #3498db;
+    color: #fff;
+}
 
 
 footer {
