@@ -12,7 +12,9 @@ body {
     padding-right: 25px;
 }
 
-
+.footer{
+    bottom: 0;
+}
 
 /* Carousel */
 .carousel-caption p {
