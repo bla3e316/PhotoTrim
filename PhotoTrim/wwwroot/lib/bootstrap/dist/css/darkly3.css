@@ -19,7 +19,25 @@ html {
 }
 
 body {
-    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.body-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.render {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer {
+    font-size: 2rem;
+    bottom: 0;
+    color: aquamarine;
+    width: 100%;
 }
 
 article,
@@ -27,7 +45,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 main,
