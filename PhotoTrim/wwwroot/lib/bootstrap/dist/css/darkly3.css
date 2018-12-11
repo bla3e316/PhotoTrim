@@ -30,8 +30,9 @@ body {
 }
 
 .formstyle {
+    padding-right: 30px;
     padding-top: 30px;
-    display: inline-block;
+    display: inline-grid;
 }
 
 .inputstyle {
