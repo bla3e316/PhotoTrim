@@ -1,7 +1,7 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
 for details on configuring this project to bundle and minify static web assets. */
 body {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -10,17 +10,9 @@ body {
 .body-content {
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 20px;
-    padding-bottom: 60px;
 }
 
-footer {
-    position: absolute;
-    bottom: 0px;
-    height: 3px;
-    background-color: #666;
-    color: #eee;
-}
+
 
 /* Carousel */
 .carousel-caption p {
